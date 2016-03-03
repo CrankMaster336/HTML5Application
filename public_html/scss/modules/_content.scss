@@ -1,0 +1,54 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01.11.2015, 13:52:53
+    Author     : Jan Ackermann
+*/
+@-moz-keyframes jump{
+    0%, 100% {bottom: 10px}
+    50% {bottom: 0px}
+}
+@-webkit-keyframes jump{
+    0%, 100% {bottom: 10px}
+    50% {bottom: 0px}
+}
+@keyframes jump{
+    0%, 100% {bottom: 10px}
+    50% {bottom: 0px}
+}
+
+
+.content{
+    &-first{
+        height: 100%;
+        background-color: #E9EAED;
+        background: #4B79A1;
+        background: -webkit-linear-gradient(to left, #c2e59c, #64b3f4);
+        background: linear-gradient(to left top, #283E51, #4B79A1);
+    }
+    &-second{
+        height: 100%;
+        background-color: transparent;
+        position: relative;
+    }
+    &-third{
+        height: 100%;
+        background-color: #E9EAED;
+        background: #4B79A1;
+        background: -webkit-linear-gradient(to left, #c2e59c, #64b3f4);
+        background: linear-gradient(to left top, #283E51, #4B79A1);
+    }
+}
+.downArrow{
+    position: absolute;
+    left: calc(50% - 24px);
+    bottom: 10px;
+    background: transparent url("../image/direction196.png") repeat scroll 0% 0% / 40px 80px;
+    height: 80px;
+    width: 47px;
+    transform: rotate(-90deg);
+    animation: jump 2s infinite ease;
+}

@@ -1,0 +1,57 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18.02.2016, 11:17:57
+    Author     : Jan Ackermann
+*/
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; 
+    line-height: 51px;
+    &-first{
+        height: 49px;
+        width: 50px;
+        border-bottom: solid 1px #fff;        
+        background-color: #2980b9;    
+        p{
+            position: relative;
+            left: 15px;
+        }
+    }
+    &-second{
+        height: 49px;
+        width: 50px;
+        border-bottom: solid 1px #fff;
+        background-color: #2980b9;    
+        p{
+            position: relative;
+            left: 15px;
+        }
+    }
+    &-last{
+        height: 49px;
+        width: 50px;
+        border-bottom: solid 1px #fff;
+        background-color: #2980b9;   
+        p{
+            position: relative;
+            left: 15px;
+        }        
+    }
+    &--widthBig{
+        width: 100px;    
+        left: 65px;
+        p{
+            position: relative;
+            left: 65px;
+        }
+    }
+}

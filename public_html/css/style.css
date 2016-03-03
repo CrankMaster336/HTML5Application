@@ -1,0 +1,408 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01.11.2015, 13:48:29
+    Author     : Jan Ackermann
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01.11.2015, 13:47:42
+    Author     : Jan Ackermann
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01.11.2015, 13:52:12
+    Author     : Jan Ackermann
+*/
+.background {
+  background-image: url(../image/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 1080px;
+  height: 1080px;
+  width: 100%;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01.11.2015, 13:52:53
+    Author     : Jan Ackermann
+*/
+@-moz-keyframes jump {
+  0%, 100% {
+    bottom: 10px; }
+  50% {
+    bottom: 0px; } }
+@-webkit-keyframes jump {
+  0%, 100% {
+    bottom: 10px; }
+  50% {
+    bottom: 0px; } }
+@keyframes jump {
+  0%, 100% {
+    bottom: 10px; }
+  50% {
+    bottom: 0px; } }
+.content-first {
+  height: 100%;
+  background-color: #E9EAED;
+  background: #4B79A1;
+  background: -webkit-linear-gradient(to left, #c2e59c, #64b3f4);
+  background: linear-gradient(to left top, #283E51, #4B79A1); }
+.content-second {
+  height: 100%;
+  background-color: transparent;
+  position: relative; }
+.content-third {
+  height: 100%;
+  background-color: #E9EAED;
+  background: #4B79A1;
+  background: -webkit-linear-gradient(to left, #c2e59c, #64b3f4);
+  background: linear-gradient(to left top, #283E51, #4B79A1); }
+
+.downArrow {
+  position: absolute;
+  left: calc(50% - 24px);
+  bottom: 10px;
+  background: transparent url("../image/direction196.png") repeat scroll 0% 0%/40px 80px;
+  height: 80px;
+  width: 47px;
+  transform: rotate(-90deg);
+  animation: jump 2s infinite ease; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01.11.2015, 13:50:30
+    Author     : Jan Ackermann
+*/
+.logo {
+  height: 400px;
+  width: 400px;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 100;
+  margin: 0 auto; }
+  .logo-first {
+    background-color: #3498db;
+    height: 400px;
+    width: 400px;
+    border-radius: 400px;
+    position: absolute; }
+  .logo-second {
+    background-color: #d35400;
+    height: 380px;
+    width: 380px;
+    border-radius: 400px;
+    position: absolute;
+    top: 10px;
+    left: 10px; }
+  .logo-third {
+    background-color: #34495e;
+    height: 360px;
+    width: 360px;
+    border-radius: 400px;
+    position: absolute;
+    top: 20px;
+    left: 20px; }
+  .logo-fourth {
+    background-color: #9b59b6;
+    height: 340px;
+    width: 340px;
+    border-radius: 400px;
+    position: absolute;
+    top: 30px;
+    left: 30px; }
+  .logo-fifth {
+    background-color: #34495e;
+    height: 320px;
+    width: 320px;
+    border-radius: 400px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    text-align: center;
+    cursor: pointer; }
+    .logo-fifth p {
+      margin-top: 130px; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01.11.2015, 13:54:22
+    Author     : Jan Ackermann
+*/
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000; }
+  .flip-container a {
+    text-decoration: none;
+    color: #fff; }
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotate3d(1, 1, 0, 180deg); }
+
+.flip-container, .front, .back {
+  width: 320px;
+  height: 320px; }
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative; }
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg); }
+
+/* back, initially hidden pane */
+.back {
+  transform: rotate3D(1, 1, 0, 180deg); }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01.11.2015, 13:58:31
+    Author     : Jan Ackermann
+*/
+.name {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 100;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 680px;
+  position: relative; }
+  .name p {
+    margin: 0;
+    padding-top: 10px; }
+  .name-border {
+    border: solid 1px #3498db;
+    position: absolute;
+    width: 730px;
+    height: 100px;
+    top: 10px;
+    left: -25px; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03.11.2015, 11:32:11
+    Author     : Jan Ackermann
+*/
+body, html {
+  overflow: hidden; }
+
+.browser {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  height: auto;
+  box-shadow: 0 0 12px 1px #6a6868;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+  .browser-top {
+    background-color: #2c3e50;
+    width: 100%;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+    .browser-top--close {
+      height: 10px;
+      width: 10px;
+      border-radius: 10px;
+      border: solid 1px white;
+      float: left;
+      margin-right: 10px;
+      margin-top: 15px;
+      margin-left: 20px;
+      background-color: #e74c3c; }
+    .browser-top--minimize {
+      height: 10px;
+      width: 10px;
+      border-radius: 10px;
+      border: solid 1px white;
+      float: left;
+      margin-right: 10px;
+      margin-top: 15px;
+      background-color: #f39c12; }
+    .browser-top--fullscreen {
+      height: 10px;
+      width: 10px;
+      border-radius: 10px;
+      border: solid 1px white;
+      float: left;
+      margin-right: 10px;
+      margin-top: 15px;
+      background-color: #2ecc71; }
+    .browser-top--url {
+      border-radius: 3px;
+      border: 0px none;
+      box-shadow: 0px 0px 1px 1px #878787 inset;
+      margin-top: 10px;
+      background-color: rgba(255, 255, 255, 0.44);
+      width: calc(100% - 100px); }
+  .browser-content {
+    background-color: #ecf0f1;
+    font-family: Arial; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07.11.2015, 10:42:41
+    Author     : Jan Ackermann
+*/
+.bx-prev {
+  float: left;
+  position: absolute;
+  top: 0px; }
+
+.bx-next {
+  float: right;
+  position: absolute;
+  top: 0px;
+  right: 0px; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18.02.2016, 11:17:57
+    Author     : Jan Ackermann
+*/
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 51px; }
+  .nav-first {
+    height: 49px;
+    width: 50px;
+    border-bottom: solid 1px #fff;
+    background-color: #2980b9; }
+    .nav-first p {
+      position: relative;
+      left: 15px; }
+  .nav-second {
+    height: 49px;
+    width: 50px;
+    border-bottom: solid 1px #fff;
+    background-color: #2980b9; }
+    .nav-second p {
+      position: relative;
+      left: 15px; }
+  .nav-last {
+    height: 49px;
+    width: 50px;
+    border-bottom: solid 1px #fff;
+    background-color: #2980b9; }
+    .nav-last p {
+      position: relative;
+      left: 15px; }
+  .nav--widthBig {
+    width: 100px;
+    left: 65px; }
+    .nav--widthBig p {
+      position: relative;
+      left: 65px; }
+
+/*# sourceMappingURL=style.css.map */

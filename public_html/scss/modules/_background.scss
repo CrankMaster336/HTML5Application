@@ -1,0 +1,26 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 01.11.2015, 13:52:12
+    Author     : Jan Ackermann
+*/
+
+.background{
+    background-image: url(../image/bg.jpg) ;
+    background-repeat:no-repeat;
+    background-size: 100% 1080px;
+    height: 1080px;
+    width: 100%;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
